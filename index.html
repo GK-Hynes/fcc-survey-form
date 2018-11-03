@@ -37,7 +37,8 @@
 
       <div class="input-group">
         <label for="currentLevel">What is your current Level?</label>
-        <select name="" id="dropdown">
+        <select class="form-control" name="" id="dropdown">
+          <option value="" selected disabled>Select a level</option>
           <option value="beginner">Absolute beginner</option>
           <option value="elementary">Elementary</option>
           <option value="pre-intermediate">Pre-Intermediate</option>
@@ -90,7 +91,9 @@
         <textarea name="" id="textarea" cols="30" rows="5"></textarea>
       </div>
 
-      <input type="submit" id="submit" value="Submit">
+      <div class="input-group submit">
+        <button id="submit">Submit</button>
+      </div>
 
     </form>
   </main>
