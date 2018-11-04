@@ -133,8 +133,72 @@ input[type="radio"].tabbed:focus + span:before {
   box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* ====================*/
+/* Checkbox Styles */
+/* ====================*/
+
 ul {
   list-style: none;
+}
+
+/* Hide default checkboxes */
+input[type="checkbox"]:not(:checked),
+input[type="checkbox"]:checked {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+input[type="checkbox"] + span {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  font-size: 1rem;
+  user-select: none;
+}
+
+input[type="checkbox"] + span:before,
+input[type="checkbox"] + span:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  z-index: 1;
+  border: 2px solid black;
+  border-radius: 1px;
+  margin-top: 3px;
+  transition: 0.3s;
+}
+
+input[type="checkbox"].tabbed:focus + span:after {
+  transform: scale(1);
+  border: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+input[type="checkbox"]:checked + span:before {
+  top: -4px;
+  left: -5px;
+  width: 12px;
+  height: 22px;
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-right: 3px solid #4caf50;
+  border-bottom: 3px solid #4caf50;
+  transform: rotate(40deg);
+  backface-visibility: hidden;
+  transform-origin: 100% 100%;
+}
+
+input[type="checkbox"]:checked + span:after {
+  border: none;
 }
 
 .input-group.submit {
