@@ -16,10 +16,10 @@
 
     <p id="description">
       Whether you have a cúpla focail or are pretty much líofa, <br>
-      we want to know why you are learning Irish.
+      we want to know about your experience learning Irish.
     </p>
 
-    <form action="" id="survey-form">
+    <form action="" id="survey-form" autocomplete="off">
       <div class="input-group">
         <label for="name" id="name-label">Name </label>
         <input class="form-control" type="text" id="name" placeholder="Name">
@@ -36,7 +36,19 @@
       </div>
 
       <div class="input-group">
-        <label for="currentLevel">What is your current Level?</label>
+        <label for="currentLevel">How long have you been learning, or re-learning, Irish?</label>
+        <select class="form-control" name="" id="dropdown">
+          <option value="" selected disabled>Select a time range</option>
+          <option value="">Less than a month</option>
+          <option value="">Two to six months</option>
+          <option value="">Six months to a year</option>
+          <option value="">One to two years</option>
+          <option value="">More than two years</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label for="currentLevel">How would you describe your current Level?</label>
         <select class="form-control" name="" id="dropdown">
           <option value="" selected disabled>Select a level</option>
           <option value="beginner">Beginner</option>
