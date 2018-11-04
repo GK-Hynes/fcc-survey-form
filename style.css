@@ -7,6 +7,15 @@ body {
   height: auto;
 }
 
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+ul {
+  list-style: none;
+}
+
 header {
   background: #4caf50;
   height: 15vh;
@@ -24,11 +33,6 @@ main {
   flex-direction: column;
 }
 
-h1 {
-  text-align: center;
-  font-size: 2.5rem;
-}
-
 #description {
   text-align: center;
   font-size: 1.2rem;
@@ -36,6 +40,7 @@ h1 {
 
 .input-group {
   margin: 1rem;
+  margin-bottom: 2.5rem;
 }
 
 .form-control {
@@ -137,10 +142,6 @@ input[type="radio"].tabbed:focus + span:before {
 /* Checkbox Styles */
 /* ====================*/
 
-ul {
-  list-style: none;
-}
-
 /* Hide default checkboxes */
 input[type="checkbox"]:not(:checked),
 input[type="checkbox"]:checked {
@@ -183,6 +184,7 @@ input[type="checkbox"].tabbed:focus + span:after {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+/* Checked styles */
 input[type="checkbox"]:checked + span:before {
   top: -4px;
   left: -5px;
