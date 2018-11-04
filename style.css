@@ -201,6 +201,20 @@ input[type="checkbox"]:checked + span:after {
   border: none;
 }
 
+/* Textarea styles */
+
+textarea {
+  line-height: normal;
+  font-size: 1rem;
+  overflow-y: hidden;
+  padding: 0.8rem 0 0.8rem 0;
+  resize: none;
+  min-height: 3rem;
+  box-sizing: border-box;
+}
+
+/* Button styles */
+
 .input-group.submit {
   display: flex;
   flex-direction: row;
