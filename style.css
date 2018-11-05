@@ -16,6 +16,13 @@ ul {
   list-style: none;
 }
 
+input,
+select,
+textarea,
+button {
+  font-family: inherit;
+}
+
 header {
   background: #4caf50;
   height: 15vh;
@@ -210,8 +217,7 @@ textarea {
   font-size: 1rem;
   overflow-y: hidden;
   padding: 0.8rem 0 0.8rem 0;
-  resize: none;
-  min-height: 3rem;
+  min-height: 5rem;
   box-sizing: border-box;
 }
 
