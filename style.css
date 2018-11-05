@@ -7,9 +7,17 @@ body {
   height: auto;
 }
 
+section {
+  border-bottom: 2px solid #e6e6e6;
+}
+
 h1 {
   text-align: center;
   font-size: 2.5rem;
+}
+
+h2 {
+  text-align: center;
 }
 
 ul {
@@ -224,6 +232,7 @@ textarea {
 /* Button styles */
 
 .input-group.submit {
+  border: none;
   display: flex;
   flex-direction: row;
   justify-content: center;

@@ -20,203 +20,241 @@
     </p>
 
     <form action="" id="survey-form" autocomplete="off">
-      <div class="input-group">
-        <label for="name" id="name-label">Name</label>
-        <input class="form-control" type="text" id="name" placeholder="Name">
-      </div>
 
-      <div class="input-group">
-        <label for="nationality" id="name-label">Nationality</label>
-        <input class="form-control" type="text" id="nationality" placeholder="Nationality">
-      </div>
+      <section id="background">
+        <h2>Your Background</h2>
+        <div class="input-group">
+          <label for="currentLevel">How long have you been learning, or re-learning, Irish?</label>
+          <select class="form-control" name="" id="dropdown">
+            <option value="" selected disabled>Select a time range</option>
+            <option value="">Less than a month</option>
+            <option value="">Two to six months</option>
+            <option value="">Six months to a year</option>
+            <option value="">One to two years</option>
+            <option value="">More than two years</option>
+          </select>
+        </div>
 
-      <div class="input-group">
-        <label for="email" id="email-label">Email</label>
-        <input class="form-control" type="email" id="email" placeholder="Email">
-      </div>
-
-      <div class="input-group">
-        <label for="age" id="age-label">Age</label>
-        <input class="form-control" type="number" id="number" placeholder="Age" min="1" max="125">
-      </div>
-
-      <div class="input-group">
-        <label for="currentLevel">How long have you been learning, or re-learning, Irish?</label>
-        <select class="form-control" name="" id="dropdown">
-          <option value="" selected disabled>Select a time range</option>
-          <option value="">Less than a month</option>
-          <option value="">Two to six months</option>
-          <option value="">Six months to a year</option>
-          <option value="">One to two years</option>
-          <option value="">More than two years</option>
-        </select>
-      </div>
-
-      <div class="input-group">
-        <label for="currentLevel">How would you describe your current Level?</label>
-        <select class="form-control" name="" id="dropdown">
-          <option value="" selected disabled>Select a level</option>
-          <option value="beginner">Beginner</option>
-          <option value="elementary">Elementary</option>
-          <option value="pre-intermediate">Pre-Intermediate</option>
-          <option value="intermediate">Intermediate</option>
-          <option value="upper-intermediate">Upper-Intermediate</option>
-          <option value="advanced">Advanced</option>
-        </select>
-      </div>
-
-      <div class="input-group">
-        <p>Did you have Irish classes in school?</p>
-        <p>
-          <label>
-            <input name="radio-buttons" type="radio" value="yes">
-            <span>Yes</span>
-          </label>
-        </p>
-        <p>
-          <label>
-            <input name="radio-buttons" type="radio" value="no">
-            <span>No</span>
-          </label>
-        </p>
-      </div>
-
-      <div class="input-group">
-        <p>Do you speak any other languages?</p>
-        <p>
-          <label>
-            <input name="radio-buttons" type="radio" value="Yes">
-            <span>Yes</span>
-          </label>
-        </p>
-        <p>
-          <label>
-            <input name="radio-buttons" type="radio" value="No">
-            <span>No</span>
-          </label>
-        </p>
-        <label for="textarea">If yes, please give more details?</label>
-        <textarea class="form-control" name="" cols="30" rows="10"></textarea>
-      </div>
-
-      <div class="input-group">
-        <p>Which skill are you most confident in?</p>
-        <p>
-          <label>
-            <input name="radio-buttons" type="radio" value="Reading">
-            <span>Reading</span>
-          </label>
-        </p>
-        <p>
-          <label>
-            <input name="radio-buttons" type="radio" value="Writing">
-            <span>Writing</span>
-          </label>
-        </p>
-        <p>
-          <label>
-            <input name="radio-buttons" type="radio" value="Listening">
-            <span>Listening</span>
-          </label>
-        </p>
-        <p>
-          <label>
-            <input name="radio-buttons" type="radio" value="Speaking">
-            <span>Speaking</span>
-          </label>
-        </p>
-      </div>
-
-      <div class="input-group">
-        <p>Which skill has been most difficult to develop?</p>
-        <p>
-          <label>
-            <input name="radio-buttons" type="radio" value="Reading">
-            <span>Reading</span>
-          </label>
-        </p>
-        <p>
-          <label>
-            <input name="radio-buttons" type="radio" value="Writing">
-            <span>Writing</span>
-          </label>
-        </p>
-        <p>
-          <label>
-            <input name="radio-buttons" type="radio" value="Listening">
-            <span>Listening</span>
-          </label>
-        </p>
-        <p>
-          <label>
-            <input name="radio-buttons" type="radio" value="Speaking">
-            <span>Speaking</span>
-          </label>
-        </p>
-      </div>
-
-      <div class="input-group">
-        <label for="resources">Which resources have been helpful? Tick all that apply.</label>
-        <ul id="resources">
-          <li class="checkbox">
+        <div class="input-group">
+          <p>Did you have Irish classes in school?</p>
+          <p>
             <label>
-              <input type="checkbox" value="books">
-              <span>Books</span>
+              <input name="radio-buttons" type="radio" value="yes">
+              <span>Yes</span>
             </label>
-          </li>
-          <li class="checkbox">
+          </p>
+          <p>
             <label>
-              <input type="checkbox" value="classes">
-              <span>Classes</span>
+              <input name="radio-buttons" type="radio" value="no">
+              <span>No</span>
             </label>
-          </li>
-          <li class="checkbox">
-            <label>
-              <input type="checkbox" value="duolingo">
-              <span>Duolingo</span>
-            </label>
-          </li>
-          <li class="checkbox">
-            <label>
-              <input type="checkbox" value="TG4">
-              <span>TG4</span>
-            </label>
-          </li>
-          <li class="checkbox">
-            <label>
-              <input type="checkbox" value="Raidió na Gaeltachta">
-              <span>Raidió na Gaeltachta</span>
-            </label>
-          </li>
-          <li class="checkbox">
-            <label>
-              <input type="checkbox" value="Social Media">
-              <span>Social Media</span>
-            </label>
-          </li>
-          <li class="checkbox">
-            <label>
-              <input type="checkbox" value="Conversation groups">
-              <span>Conversation Groups</span>
-            </label>
-          </li>
-          <li class="checkbox">
-            <label>
-              <input type="checkbox" value="Pop Up Gaeltacht">
-              <span>Pop Up Gaeltacht</span>
-            </label>
-          </li>
-        </ul>
-      </div>
+          </p>
+        </div>
 
-      <div class="input-group">
-        <label for="textarea">Anything else to add?</label>
-        <textarea class="form-control" name="" id="textarea" cols="30" rows="5"></textarea>
-      </div>
+        <div class="input-group">
+          <label for="age" id="age-label">What age are you?</label>
+          <input class="form-control" type="number" id="number" placeholder="Age" min="1" max="125">
+        </div>
 
-      <div class="input-group submit">
-        <button id="submit">Submit</button>
-      </div>
+        <div class="input-group">
+          <label for="nationality" id="name-label">What's your nationality?</label>
+          <input class="form-control" type="text" id="nationality" placeholder="Nationality">
+        </div>
+
+        <div class="input-group">
+          <p>Do you speak any other languages?</p>
+          <p>
+            <label>
+              <input name="radio-buttons" type="radio" value="Yes">
+              <span>Yes</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input name="radio-buttons" type="radio" value="No">
+              <span>No</span>
+            </label>
+          </p>
+          <label for="textarea">If you do, please give more details?</label>
+          <textarea class="form-control" name="other-language-details"></textarea>
+        </div>
+      </section>
+
+      <section id="progress">
+        <h2>Your Progress</h2>
+        <div class="input-group">
+          <label for="currentLevel">How would you describe your current Level?</label>
+          <select class="form-control" name="" id="dropdown">
+            <option value="" selected disabled>Select a level</option>
+            <option value="beginner">Beginner</option>
+            <option value="elementary">Elementary</option>
+            <option value="pre-intermediate">Pre-Intermediate</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="upper-intermediate">Upper-Intermediate</option>
+            <option value="advanced">Advanced</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <p>Which skill are you most confident in?</p>
+          <p>
+            <label>
+              <input name="radio-buttons" type="radio" value="Reading">
+              <span>Reading</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input name="radio-buttons" type="radio" value="Writing">
+              <span>Writing</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input name="radio-buttons" type="radio" value="Listening">
+              <span>Listening</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input name="radio-buttons" type="radio" value="Speaking">
+              <span>Speaking</span>
+            </label>
+          </p>
+        </div>
+
+        <div class="input-group">
+          <p>Which skill has been most difficult to develop?</p>
+          <p>
+            <label>
+              <input name="radio-buttons" type="radio" value="Reading">
+              <span>Reading</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input name="radio-buttons" type="radio" value="Writing">
+              <span>Writing</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input name="radio-buttons" type="radio" value="Listening">
+              <span>Listening</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input name="radio-buttons" type="radio" value="Speaking">
+              <span>Speaking</span>
+            </label>
+          </p>
+        </div>
+
+        <div class="input-group">
+          <p>How often do you speak Irish?</p>
+          <p>
+            <label>
+              <input name="radio-buttons" type="radio" value="daily">
+              <span>Every Day</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input name="radio-buttons" type="radio" value="weekly">
+              <span>Every Week</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input name="radio-buttons" type="radio" value="monthly">
+              <span>Every Month</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input name="radio-buttons" type="radio" value="less often">
+              <span>Less often than that</span>
+            </label>
+          </p>
+        </div>
+
+        <div class="input-group">
+          <label for="resources">Which resources have been helpful? Tick all that apply.</label>
+          <ul id="resources">
+            <li class="checkbox">
+              <label>
+                <input type="checkbox" value="books">
+                <span>Books</span>
+              </label>
+            </li>
+            <li class="checkbox">
+              <label>
+                <input type="checkbox" value="classes">
+                <span>Classes</span>
+              </label>
+            </li>
+            <li class="checkbox">
+              <label>
+                <input type="checkbox" value="duolingo">
+                <span>Duolingo</span>
+              </label>
+            </li>
+            <li class="checkbox">
+              <label>
+                <input type="checkbox" value="TG4">
+                <span>TG4</span>
+              </label>
+            </li>
+            <li class="checkbox">
+              <label>
+                <input type="checkbox" value="Raidió na Gaeltachta">
+                <span>Raidió na Gaeltachta</span>
+              </label>
+            </li>
+            <li class="checkbox">
+              <label>
+                <input type="checkbox" value="Social Media">
+                <span>Social Media</span>
+              </label>
+            </li>
+            <li class="checkbox">
+              <label>
+                <input type="checkbox" value="Conversation groups">
+                <span>Conversation Groups</span>
+              </label>
+            </li>
+            <li class="checkbox">
+              <label>
+                <input type="checkbox" value="Pop Up Gaeltacht">
+                <span>Pop Up Gaeltacht</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="input-group">
+          <label for="textarea">Anything else to add?</label>
+          <textarea class="form-control" name="" id="textarea" cols="30" rows="5"></textarea>
+        </div>
+      </section>
+
+      <section id="contact-details">
+        <h2>Keep in Touch?</h2>
+        <div class="input-group">
+          <label for="name" id="name-label">Name</label>
+          <input class="form-control" type="text" id="name" placeholder="Name">
+        </div>
+
+        <div class="input-group">
+          <label for="email" id="email-label">Email</label>
+          <input class="form-control" type="email" id="email" placeholder="Email">
+        </div>
+      </section>
+
+      <section class="input-group submit">
+        <button id="submit" type="submit">Submit</button>
+      </section>
 
     </form>
   </main>
