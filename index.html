@@ -21,12 +21,17 @@
 
     <form action="" id="survey-form" autocomplete="off">
       <div class="input-group">
-        <label for="name" id="name-label">Name </label>
+        <label for="name" id="name-label">Name</label>
         <input class="form-control" type="text" id="name" placeholder="Name">
       </div>
 
       <div class="input-group">
-        <label for="email" id="email-label">Email </label>
+        <label for="nationality" id="name-label">Nationality</label>
+        <input class="form-control" type="text" id="nationality" placeholder="Nationality">
+      </div>
+
+      <div class="input-group">
+        <label for="email" id="email-label">Email</label>
         <input class="form-control" type="email" id="email" placeholder="Email">
       </div>
 
@@ -77,6 +82,80 @@
       </div>
 
       <div class="input-group">
+        <p>Do you speak any other languages?</p>
+        <p>
+          <label>
+            <input name="radio-buttons" type="radio" value="Yes">
+            <span>Yes</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input name="radio-buttons" type="radio" value="No">
+            <span>No</span>
+          </label>
+        </p>
+        <label for="textarea">If yes, please give more details?</label>
+        <textarea class="form-control" name="" cols="30" rows="10"></textarea>
+      </div>
+
+      <div class="input-group">
+        <p>Which skill are you most confident in?</p>
+        <p>
+          <label>
+            <input name="radio-buttons" type="radio" value="Reading">
+            <span>Reading</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input name="radio-buttons" type="radio" value="Writing">
+            <span>Writing</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input name="radio-buttons" type="radio" value="Listening">
+            <span>Listening</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input name="radio-buttons" type="radio" value="Speaking">
+            <span>Speaking</span>
+          </label>
+        </p>
+      </div>
+
+      <div class="input-group">
+        <p>Which skill has been most difficult to develop?</p>
+        <p>
+          <label>
+            <input name="radio-buttons" type="radio" value="Reading">
+            <span>Reading</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input name="radio-buttons" type="radio" value="Writing">
+            <span>Writing</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input name="radio-buttons" type="radio" value="Listening">
+            <span>Listening</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input name="radio-buttons" type="radio" value="Speaking">
+            <span>Speaking</span>
+          </label>
+        </p>
+      </div>
+
+      <div class="input-group">
         <label for="resources">Which resources have been helpful? Tick all that apply.</label>
         <ul id="resources">
           <li class="checkbox">
@@ -115,11 +194,23 @@
               <span>Social Media</span>
             </label>
           </li>
+          <li class="checkbox">
+            <label>
+              <input type="checkbox" value="Conversation groups">
+              <span>Conversation Groups</span>
+            </label>
+          </li>
+          <li class="checkbox">
+            <label>
+              <input type="checkbox" value="Pop Up Gaeltacht">
+              <span>Pop Up Gaeltacht</span>
+            </label>
+          </li>
         </ul>
       </div>
 
       <div class="input-group">
-        <label for="textarea">Any additional comments?</label>
+        <label for="textarea">Anything else to add?</label>
         <textarea class="form-control" name="" id="textarea" cols="30" rows="5"></textarea>
       </div>
 
