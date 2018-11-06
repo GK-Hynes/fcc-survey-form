@@ -23,13 +23,13 @@
 
     <form action="" id="survey-form" autocomplete="off">
 
-      <section id="background" class="two-column">
+      <section id="background" class="row">
 
-        <div class="col-1">
+        <div class="col-sm-1">
           <h2>Your Background</h2>
         </div>
 
-        <div class="col-2">
+        <div class="col-sm-2">
           <div class="input-group">
             <label for="currentLevel">How long have you been learning, or re-learning, Irish?</label>
             <select class="form-control" name="" id="dropdown">
@@ -88,12 +88,12 @@
         </div>
       </section>
 
-      <section id="progress" class="two-column">
-        <div class="col-1">
+      <section id="progress" class="row">
+        <div class="col-sm-1">
           <h2>Your Progress</h2>
         </div>
 
-        <div class="col-2">
+        <div class="col-sm-2">
           <div class="input-group">
             <label for="currentLevel">How would you describe your current Level?</label>
             <select class="form-control" name="" id="dropdown">
@@ -252,12 +252,63 @@
         </div>
       </section>
 
-      <section id="contact-details" class="two-column">
-        <div class="col-1">
+      <section id="reasons">
+        <div class="row">
+          <div class="col-sm-1">
+            <h2>Your Reasons</h2>
+          </div>
+          <div class="col-sm-2">
+            <div class="input-group">
+              <label for="reasons">Why are you learning Irish? Tick all that apply.</label>
+              <ul>
+                <li class="checkbox">
+                  <label>
+                    <input type="checkbox" value="Heritage">
+                    <span>To connect with your Heritage</span>
+                  </label>
+                </li>
+                <li class="checkbox">
+                  <label>
+                    <input type="checkbox" value="Endangered">
+                    <span>Because it's endangered</span>
+                  </label>
+                </li>
+                <li class="checkbox">
+                  <label>
+                    <input type="checkbox" value="multilingualism">
+                    <span>The benefits of multilingualism</span>
+                  </label>
+                </li>
+                <li class="checkbox">
+                  <label>
+                    <input type="checkbox" value="employment">
+                    <span>Employment opportunities</span>
+                  </label>
+                </li>
+                <li class="checkbox">
+                  <label>
+                    <input type="checkbox" value="education">
+                    <span>Educational opportunities</span>
+                  </label>
+                </li>
+                <li class="checkbox">
+                  <label>
+                    <input type="checkbox" value="Interesting">
+                    <span>Because it's interesting</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact-details" class="row">
+        <div class="col-sm-1">
           <h2>Keep in Touch?</h2>
         </div>
 
-        <div class="col-2">
+        <div class="col-sm-2">
           <div class="input-group">
             <label for="name" id="name-label">Name</label>
             <input class="form-control" type="text" id="name" placeholder="Name">

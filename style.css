@@ -11,16 +11,16 @@ section {
   border-bottom: 2px solid #e6e6e6;
 }
 
-.two-column {
+.row {
   display: flex;
   flex-direction: row;
 }
 
-.col-1 {
+.col-sm-1 {
   flex: 1;
 }
 
-.col-2 {
+.col-sm-2 {
   flex: 2;
 }
 
@@ -42,6 +42,10 @@ select,
 textarea,
 button {
   font-family: inherit;
+}
+
+label {
+  font-size: 1.2rem;
 }
 
 header {
