@@ -33,13 +33,13 @@
         <div class="col-sm-2">
           <div class="input-group">
             <label for="currentLevel">How long have you been learning, or re-learning, Irish?</label>
-            <select class="form-control" name="" id="dropdown">
-              <option value="" selected disabled>Select a time range</option>
-              <option value="">Less than a month</option>
-              <option value="">Two to six months</option>
-              <option value="">Six months to a year</option>
-              <option value="">One to two years</option>
-              <option value="">More than two years</option>
+            <select class="form-control" name="time learning" id="dropdown">
+              <option selected disabled>Select a time range</option>
+              <option value="one month">Less than a month</option>
+              <option value="one to six months">Two to six months</option>
+              <option value="six months to one year">Six months to a year</option>
+              <option value="one to two years">One to two years</option>
+              <option value="over two years">More than two years</option>
             </select>
           </div>
 
@@ -47,13 +47,13 @@
             <p>Did you have Irish classes in school?</p>
             <p>
               <label>
-                <input name="classes-radio-buttons" type="radio" value="yes">
+                <input name="classes-radio-buttons" type="radio" value="classes">
                 <span>Yes</span>
               </label>
             </p>
             <p>
               <label>
-                <input name="classes-radio-buttons" type="radio" value="no">
+                <input name="classes-radio-buttons" type="radio" value="no classes">
                 <span>No</span>
               </label>
             </p>
@@ -73,13 +73,13 @@
             <p>Do you speak any other languages?</p>
             <p>
               <label>
-                <input name="lang-radio-buttons" type="radio" value="Yes">
+                <input name="lang-radio-buttons" type="radio" value="other languages">
                 <span>Yes</span>
               </label>
             </p>
             <p>
               <label>
-                <input name="lang-radio-buttons" type="radio" value="No">
+                <input name="lang-radio-buttons" type="radio" value="no other languages">
                 <span>No</span>
               </label>
             </p>
@@ -100,13 +100,13 @@
               <ul>
                 <li class="checkbox">
                   <label>
-                    <input type="checkbox" value="Heritage">
+                    <input type="checkbox" value="heritage">
                     <span>To connect with your Heritage</span>
                   </label>
                 </li>
                 <li class="checkbox">
                   <label>
-                    <input type="checkbox" value="Endangered">
+                    <input type="checkbox" value="endangered">
                     <span>Because it's endangered</span>
                   </label>
                 </li>
@@ -130,7 +130,7 @@
                 </li>
                 <li class="checkbox">
                   <label>
-                    <input type="checkbox" value="Interesting">
+                    <input type="checkbox" value="interesting">
                     <span>Because it's interesting</span>
                   </label>
                 </li>
@@ -150,8 +150,8 @@
         <div class="col-sm-2">
           <div class="input-group">
             <label for="currentLevel">How would you describe your current Level?</label>
-            <select class="form-control" name="" id="dropdown">
-              <option value="" selected disabled>Select a level</option>
+            <select class="form-control" name="current level" id="dropdown">
+              <option selected disabled>Select a level</option>
               <option value="beginner">Beginner</option>
               <option value="elementary">Elementary</option>
               <option value="pre-intermediate">Pre-Intermediate</option>
@@ -301,7 +301,7 @@
 
           <div class="input-group">
             <label for="textarea">Anything else to add?</label>
-            <textarea class="form-control" name="" id="textarea" cols="30" rows="5"></textarea>
+            <textarea class="form-control" name="other resources" id="textarea" cols="30" rows="5"></textarea>
           </div>
         </div>
       </section>
