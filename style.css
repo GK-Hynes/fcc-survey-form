@@ -11,13 +11,6 @@ section {
   border-bottom: 2px solid #e6e6e6;
 }
 
-@media (min-width: 600px) {
-  .row {
-    display: flex;
-    flex-direction: row;
-  }
-}
-
 .col-sm-1 {
   flex: 1;
   margin: 0 15px;
@@ -31,6 +24,7 @@ section {
 h1 {
   text-align: center;
   font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 
 h2 {
@@ -46,6 +40,7 @@ select,
 textarea,
 button {
   font-family: inherit;
+  font-size: 1rem;
 }
 
 input,
@@ -68,14 +63,22 @@ p {
   font-size: 1.2rem;
 }
 
-header {
+.header {
   background: #4caf50;
   height: 15vh;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
+#intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #description {
+  max-width: 400px;
   line-height: 1.4;
+  margin-bottom: 2rem;
 }
 
 main {
@@ -100,7 +103,8 @@ main {
 }
 
 .form-control {
-  width: 100%;
+  display: block;
+  width: 70%;
   height: 3rem;
   outline: none;
   border: none;
@@ -302,4 +306,19 @@ button:hover {
 
 .fa-paper-plane {
   margin-left: 10px;
+}
+
+/* ==============*/
+/* Media Queries */
+/* ==============*/
+
+@media (min-width: 600px) {
+  #description {
+    max-width: 500px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
 }
