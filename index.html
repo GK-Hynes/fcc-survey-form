@@ -22,7 +22,7 @@
       </p>
     </section>
 
-    <form action="" id="survey-form" autocomplete="off">
+    <form action="#" id="survey-form" autocomplete="off">
 
       <section id="background" class="row">
 
@@ -60,12 +60,12 @@
           </div>
 
           <div class="input-group">
-            <label for="age" id="number-label">What age are you?</label>
+            <label for="number" id="number-label">What age are you?</label>
             <input class="form-control" type="number" id="number" placeholder="Age" min="1" max="125">
           </div>
 
           <div class="input-group">
-            <label for="nationality" id="name-label">What's your nationality?</label>
+            <label for="nationality" id="nationality-label">What's your nationality?</label>
             <input class="form-control" type="text" id="nationality" placeholder="Nationality">
           </div>
 
@@ -96,7 +96,7 @@
           </div>
           <div class="col-sm-2">
             <div class="input-group">
-              <label for="reasons">Why are you learning Irish? Tick all that apply.</label>
+              <p id="reasons">Why are you learning Irish? Tick all that apply.</p>
               <ul>
                 <li class="checkbox">
                   <label>
@@ -149,8 +149,8 @@
 
         <div class="col-sm-2">
           <div class="input-group">
-            <label for="currentLevel">How would you describe your current Level?</label>
-            <select class="form-control" name="current level" id="dropdown">
+            <p id="currentLevel">How would you describe your current Level?</p>
+            <select class="form-control" name="current level">
               <option selected disabled>Select a level</option>
               <option value="beginner">Beginner</option>
               <option value="elementary">Elementary</option>
@@ -246,7 +246,7 @@
           </div>
 
           <div class="input-group">
-            <label for="resources">Which resources have been helpful? Tick all that apply.</label>
+            <p id="resources">Which resources have been helpful? Tick all that apply.</p>
             <ul id="resources">
               <li class="checkbox">
                 <label>
